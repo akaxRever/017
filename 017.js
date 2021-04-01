@@ -1,40 +1,42 @@
 "use strict"
 
-let num = 20;
+//Работа со строками
+const str = 'test';
+const arr = [1, 2, 4];
 
-function showFirstMessage (text) {
-    console.log(text);
-    let num = 20;
-    console.log(num);
-}
+// console.log(str[2]);
 
-showFirstMessage("Hello World!"); 
-console.log(num);
+// Большие либо маленькие буквы
 
-function calc (a, b) {
-    return (a + b);
-}
+// console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str);
 
-console.log(calc(4, 3));
-console.log(calc(5, 6));
-console.log(calc(10, 6));
+//Посчитать с какого символа начинается
 
-function ret() {
- let num = 50;
+const fruit = "some fruit";
+console.log(fruit.indexOf("fruit"));  
 
- //  
+// Вырезать кусок строки
+
+const logg = "Hello world!"
+console.log(logg.slice(6));
+
+console.log(logg.substring(6, 12));
+
+console.log(logg.substr(6, 5));
 
 
- return = num;   
-}
+//Работа с числами
+//Оставить целое число
+const num = 12.2;
+console.log(Math.round(num));
 
-const anotherNum = ret();
-console.log(anotherNum);
 
-let logger = function () {
-    console.log ("hello")
-};
+const test = "12.2px";
 
-logger();
+//Убирает все до целого
+// console.log(parseInt(test));
 
-const calc = (a, b) => {return a + b};
+//Убирает толькое единицы измерения
+console.log(parseFloat(test));
